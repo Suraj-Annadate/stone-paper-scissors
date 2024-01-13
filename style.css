@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(250, 97, 97);
+}
+
+h1{
+    background-color: black;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;   /* to make vertical align center */
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;  /* to make image set proper in div */
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: rgb(37, 36, 36);
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+margin-top: 5rem;
+}
+
+#msg{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    display:inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    .choice{
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choices{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5rem;
+    }
+    img{
+        height: 120px;
+        width: 120px;
+        object-fit: cover;  /* to make image set proper in div */
+        border-radius: 50%;
+    }
+    #msg{
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        display:inline;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .score-board{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-top: 5rem;
+        gap: 5rem;
+    }
+    #user-score, #comp-score{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .choice{
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choices{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5rem;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;  /* to make image set proper in div */
+        border-radius: 50%;
+    }
+    #msg{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        display:inline;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    #user-score, #comp-score{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    h1{
+        background-color: black;
+        color: white;
+        height: 6rem;
+        line-height: 6rem;   /* to make vertical align center */
+    }
+    .choice{
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choices{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+        margin-top: 5rem;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;  /* to make image set proper in div */
+        border-radius: 50%;
+    }
+    #msg{
+        background-color: black;
+        color: white;
+        font-size: 3rem;
+        display:inline;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    #user-score, #comp-score{
+        font-size: 5rem;
+    }
+    .score-board{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin-top: 5rem;
+        gap: 5rem;
+    }
+
+}
